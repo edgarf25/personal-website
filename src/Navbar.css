@@ -1,0 +1,34 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+
+.horizontal-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.resume{
+    background-color: #64ffda;
+    color: #0a192f;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 22px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.resume:hover{
+    transform: scale(1.05);
+}
+
+.navbar-logo{
+    max-width: 6%;
+    height: auto;
+}

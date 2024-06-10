@@ -1,0 +1,32 @@
+.welcome{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    gap: 25px;
+}
+
+.welcome img{
+    margin-top: 150px;
+    max-width: 20%;
+    height: auto;
+}
+
+.welcome h1{
+    text-align: center;
+    width: 70%;
+    font-size: 4.0rem;
+    font-weight: bold;
+}
+
+.welcome p{
+    text-align: center;
+    width: 50%;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.welcome h1 span{
+    color: #64ffda;
+}
