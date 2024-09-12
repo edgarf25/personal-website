@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Projects.css';
 import project_data from './assets/projects_data.js'
 import arrow_icon from './assets/arrow_icon.svg'

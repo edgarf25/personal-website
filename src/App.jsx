@@ -1,6 +1,5 @@
 import Navbar from './Navbar.jsx'
 import Footer from './Footer.jsx'
-import Card from './Card.jsx'
 import Welcome from './Welcome.jsx'
 import About from './About.jsx'
 import Projects from './Projects.jsx'

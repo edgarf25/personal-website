@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import './Modal.css';
 
 function Modal({ content, isOpen, onClose }) {
@@ -17,6 +18,8 @@ function Modal({ content, isOpen, onClose }) {
     }, [isOpen, onClose]);
   
     if (!isOpen) return null; // Render nothing if modal is not open
+
+    
   
     return (
       <div className="modal-overlay">
@@ -28,6 +31,12 @@ function Modal({ content, isOpen, onClose }) {
         </div>
       </div>
     );
+  }
+
+  Modal.propTypes = {
+    content: PropTypes.string, 
+    isOpen: PropTypes.bool,     
+    onClose: PropTypes.func,    
   };
   
 export default Modal;

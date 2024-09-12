@@ -53,8 +53,8 @@ function Contact() {
             </div>
             <div className='contact-container'>
                 <div className="contact-left">
-                    <h1>Let's Talk</h1>
-                    <p>Have a project in mind? Want to collaborate on something? Feel free to reach out to me. I'm always looking for new opportunities to learn and grow.</p>
+                    <h1>Let&apos;s Talk</h1>
+                    <p>Have a project in mind? Want to collaborate on something? Feel free to reach out to me. I&apos;m always looking for new opportunities to learn and grow.</p>
                     <div className="contact-details">
                         <div className="contact-detail">
                             <img src={mail_icon} alt="" /> 
@@ -71,13 +71,16 @@ function Contact() {
                     </div>
                 </div>
                 <form onSubmit={onSubmit} className="contact-right">
-                    <label htmlFor=''>Your Name</label>
-                    <input type="text" placeholder='Enter your name' name='name' />
-                    <label htmlFor=''>Your Email</label>
-                    <input type="email" placeholder='Enter your email' name='email' />
-                    <label htmlFor=''>Your Message</label>
-                    <textarea name='message' rows="8" placeholder='Enter your message'></textarea>
-                    <button className="contact-submit" type='submit'>Send</button>
+                    <label htmlFor="name">Your Name</label>
+                    <input id="name" type="text" placeholder="Enter your name" name="name" autoComplete="name" />
+
+                    <label htmlFor="email">Your Email</label>
+                    <input id="email" type="email" placeholder="Enter your email" name="email" autoComplete="email" />
+
+                    <label htmlFor="message">Your Message</label>
+                    <textarea id="message" name="message" rows="8" placeholder="Enter your message" autoComplete="off"></textarea>
+
+                    <button className="contact-submit" type="submit">Send</button>
                 </form>
             </div>
         </div>
