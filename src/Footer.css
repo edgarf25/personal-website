@@ -1,0 +1,11 @@
+.footer{
+    color: #64ffda;
+    display: flex;
+    justify-content: center;
+}
+
+.footer p{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px;
+}

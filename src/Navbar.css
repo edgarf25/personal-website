@@ -2,33 +2,132 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 170px;
+    margin: 20px 130px;
 }
 
 .horizontal-list{
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 60px;
-    font-size: 20px;
+    gap: 50px;
+    font-size: 1.25rem;
 }
+
+.horizontal-list li p:hover {
+    color: #64ffda; 
+    transform: scale(1.05);
+  }
+
 
 .resume{
     background-color: #64ffda;
     color: #0a192f;
-    padding: 10px 20px;
     border-radius: 50px;
-    font-size: 22px;
-    text-decoration: none;
+    font-size: 1.375rem;
     cursor: pointer;
     transition: 0.5s;
+    margin: 0 0 0 20px;
+}
+
+.resume a{
+    text-decoration: none;
+    color: #0a192f;
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
 }
 
 .resume:hover{
-    transform: scale(1.05);
+    transform: scale(1.15);
 }
 
 .navbar-logo{
-    max-width: 6%;
+    max-width: 70px;
     height: auto;
+    margin: 0 20px 0 0;
+}
+
+
+.anchor-link{
+    text-decoration: none;
+}
+
+.nav-mob-close{
+    display: none;
+}
+
+.nav-mob-open{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        margin: 20px 50px;
+    }
+
+    .horizontal-list {
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background-color: #112240;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+        padding-bottom: 50px;
+    }
+
+    .horizontal-list li {
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .resume {
+        background-color: #64ffda;
+        color: #0a192f;
+        border-radius: 50px;
+        font-size: 1.375rem;
+        cursor: pointer;
+        z-index: 2;
+        bottom: 20px;
+        transition: right 0.5s;
+        right: -350px;
+        position: fixed;
+        width: 350px;
+        text-align: center;
+    }
+    
+    .resume a {
+        text-decoration: none;
+        color: #0a192f;
+        display: block;
+    }
+    
+    .resume:hover {
+        transform: scale(1.05);
+    }
+
+    .nav-mob-open {
+        display: block;
+        position: fixed;
+        right: 30px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .nav-mob-close {
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
 }

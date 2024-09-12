@@ -1,9 +1,8 @@
 .about{
-    margin-top: 15%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     /* font-weight: bold; */
     gap: 25px;
     text-align: center;
@@ -12,29 +11,39 @@
 .about-header{
     display: flex;
     justify-content: center;
-    width: 70%;
-    gap: 100px;
+    /* max-width: 110rem; */
 
 }
 
 .about-text{
     text-align: left;
     max-width: 50%;
+    margin: 0px 100px;
+}
+
+.about-text p span{
+    color: #64ffda;
+    font-weight: bold;
 }
 
 .about-img{
     display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
 .about-img img{
-    max-width: 80%;
+    width: 100%; 
+    max-width: 400px; 
     height: auto;
+    display: inline-block;
 }
 
 .about-skills{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     width: 60%;
+    font-size: 1.5rem;
 }
 .about-skills ul{
     display: grid;
@@ -44,14 +53,56 @@
     text-align: left;
 }
 
-.about-skills h1{
+/* .about-skills h1{
     font-size: 2.5rem;
     font-weight: bold;
     display: flex;
     margin-bottom: 50px;
-}
+} */
 
 .about-skills li::before{
     content: "▹";
     color: #64ffda;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .about{
+        margin-top: 10%;
+    }
+
+    .about-header{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .about-text{
+        max-width: 80%;
+    }
+
+    .about-img img{
+        max-width: 100%;
+    }
+
+    .about-skills{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .about-skills h1{
+        font-size: 2rem;
+    }
+
+    .about-skills ul{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 200px;
+    }
+
+    .about-img {
+        display: none; /* Hides the image container and image */
+    }
+    
 }

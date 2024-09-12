@@ -1,8 +1,13 @@
+import './Footer.css'
+
 function Footer() {
+
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer>
-      <p>©  EdgarFong.com {new Date().getFullYear()}</p>
-    </footer>
+    <div className="footer">
+      <p>© {currentYear} Created and Designed by Edgar Fong</p>
+    </div>
   );
 }
 
