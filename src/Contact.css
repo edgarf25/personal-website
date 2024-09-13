@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 250px 170px 80px;
+    margin: 250px 155px 80px;
 }
 
 .contact-title{
@@ -15,7 +15,7 @@
     padding: 0px 30px;
     font-size: 4rem;
     font-weight: 600;
-    margin: 0px 100px;
+    margin: 0px 0px;
 }
 
 .contact-container{
@@ -172,4 +172,10 @@
         padding: 20px 40px;
     }
     
+}
+
+@media (min-width: 769px) and (max-width: 1024px) { /* Tablet styles */
+    .contact{
+        margin: 250px 100px 80px;
+    }
 }

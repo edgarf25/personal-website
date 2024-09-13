@@ -18,6 +18,14 @@
     transform: scale(1.05);
   }
 
+.horizontal-list li a{ 
+    color: #050cd1;
+}
+
+.horizontal-list li a:visited{
+    text-decoration: none;
+    /* color: inherit; */
+}
 
 .resume{
     background-color: #64ffda;

@@ -43,7 +43,7 @@ function Projects() {
     
     const checkMobileScreen = () => {
 
-      const isMobileScreen = window.matchMedia("(max-width: 768px)").matches;
+      const isMobileScreen = window.matchMedia("(max-width: 1024px)").matches;
       setIsMobile(isMobileScreen);
       setVisibleProjects(isMobileScreen ? 2 : 3);
   };
@@ -114,7 +114,7 @@ function Projects() {
             <>
               <h2>{selectedProject.p_name}</h2>
               <p>{selectedProject.p_moreinfo}</p>
-              <img src={selectedProject.p_moreimg}/>
+              <img src={selectedProject.p_img}/>
             </> 
           ) : null}
       />
