@@ -114,7 +114,7 @@
 
 @media screen and (max-width: 768px){
     .contact{
-        margin: 80px 50px;
+        margin: 80px 40px;
         Display: flex; /* Use flexbox */
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items horizontally */
@@ -124,7 +124,7 @@
 
     .contact-title h1{
         font-size: 50px;
-        margin: 0px 15px; 
+        margin: 0px 5px; 
         padding: 0px 0px;
     }
 
@@ -161,11 +161,11 @@
     }
 
     .contact-right input{
-        width: 100%;
+        width: 90%;
     }
 
     .contact-right textarea{
-        width: 97%;
+        width: 85%;
     }
 
     .contact-submit{
