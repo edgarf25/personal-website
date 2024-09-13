@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './Projects.css';
 import project_data from './assets/projects_data.js'
 import arrow_icon from './assets/arrow_icon.svg'
@@ -37,8 +37,9 @@ const imagesToPreload = [
 
 function Projects() {
     const isMobileScreen = window.matchMedia("(max-width: 1024px)").matches;
-    const [visibleProjects, setVisibleProjects] = useState(isMobileScreen ? 2 : 3); // Setting initial visible projects to 3 on large screens
     const [isMobile, setIsMobile] = useState(isMobileScreen);
+    const initialVisibleProjects = useRef(isMobileScreen ? 2 : 3);
+    const [visibleProjects, setVisibleProjects] = useState(initialVisibleProjects.current); // Setting initial visible projects to 3 on large screens
     const [selectedProject, setSelectedProject] = useState(null); // To manage the selected project
     const [isModalOpen, setIsModalOpen] = useState(false); // To manage modal state
     
