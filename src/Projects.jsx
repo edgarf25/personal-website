@@ -37,8 +37,8 @@ const imagesToPreload = [
 
 function Projects() {
     const isMobileScreen = window.matchMedia("(max-width: 1024px)").matches;
-    const [visibleProjects, setVisibleProjects] = useState(3); // Setting initial visible projects to 3 on large screens
-    const [isMobile, setIsMobile] = useState(false);
+    const [visibleProjects, setVisibleProjects] = useState(isMobileScreen ? 2 : 3); // Setting initial visible projects to 3 on large screens
+    const [isMobile, setIsMobile] = useState(isMobileScreen);
     const [selectedProject, setSelectedProject] = useState(null); // To manage the selected project
     const [isModalOpen, setIsModalOpen] = useState(false); // To manage modal state
     
