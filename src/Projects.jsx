@@ -36,6 +36,7 @@ const imagesToPreload = [
 
 
 function Projects() {
+    const isMobileScreen = window.matchMedia("(max-width: 1024px)").matches;
     const [visibleProjects, setVisibleProjects] = useState(3); // Setting initial visible projects to 3 on large screens
     const [isMobile, setIsMobile] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null); // To manage the selected project
@@ -45,13 +46,13 @@ function Projects() {
 
       const isMobileScreen = window.matchMedia("(max-width: 1024px)").matches;
       setIsMobile(isMobileScreen);
-      setVisibleProjects(isMobileScreen ? 2 : 3);
+      // setVisibleProjects(isMobileScreen ? 2 : 3);
   };
 
   useEffect(() => {
     preloadImages(imagesToPreload); //loading images at beginning
     
-    checkMobileScreen(); // Checking if its mobile or not on initial load
+    // checkMobileScreen(); // Checking if its mobile or not on initial load
     window.addEventListener('resize', checkMobileScreen); // This will update on resize
 
     // Cleanup event listener on component unmount
