@@ -79,6 +79,11 @@
 
     .about-text{
         max-width: 80%;
+        margin: 0px 25px;
+    }
+
+    .about-text h1{
+        text-align: center;
     }
 
     .about-img img{
@@ -98,7 +103,8 @@
 
     .about-skills ul{
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px 200px;
+        gap: 20px 50px;
+        margin: 0px 20px;
     }
 
     .about-img {
