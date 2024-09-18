@@ -33,10 +33,5 @@ function Modal({ content, isOpen, onClose }) {
     );
   }
 
-  Modal.propTypes = {
-    content: PropTypes.string, 
-    isOpen: PropTypes.bool,     
-    onClose: PropTypes.func,    
-  };
   
 export default Modal;

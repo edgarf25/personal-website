@@ -78,7 +78,7 @@ function Contact() {
                     <input id="email" type="email" placeholder="Enter your email" name="email" autoComplete="email" />
 
                     <label htmlFor="message">Your Message</label>
-                    <textarea id="message" name="message" rows="8" placeholder="Enter your message" autoComplete="off"></textarea>
+                    <textarea style={{ resize: 'none' }} id="message" name="message" rows="8" placeholder="Enter your message" autoComplete="off"></textarea>
 
                     <button className="contact-submit" type="submit">Send</button>
                 </form>

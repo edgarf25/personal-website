@@ -17,7 +17,7 @@ const Project_Data = [
         p_desc:"Designed and developed a robot capable of autonomously locating and picking up tennis balls using deep learning and computer vision techniques.",
         p_tech:"Python, OpenCV, TensorFlow, ROS (Robot Operating System)",
         has_link: true,
-        p_link:"https://www.github.com/"
+        p_link:"https://github.com/ALejandroCh17/Tennis-Ball-Robot"
     },
     {
         p_no:"02",
@@ -63,7 +63,8 @@ const Project_Data = [
         p_img: project_img6,
         p_desc:"An application that allows users to create and customize Dungeons and Dragons characters, with features that automatically calculate stats, abilities, and equipment based on user input and game rules.",
         p_tech:"Java, JavaFX, JSON, CSS",
-        has_link: false,
+        has_link: true,
+        p_link:"https://github.com/edgarf25/SE370-2023-Team1-DND_CC"
     },
     {
         p_no:"07",

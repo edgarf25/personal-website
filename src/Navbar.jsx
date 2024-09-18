@@ -20,9 +20,12 @@ const closeMenu = () => {
   menuRef.current.style.right = "-350px";
   resumeRef.current.style.right = "-350px";  
 }
+
+
+
     return (
       <div id= 'home' className="navbar">
-        <img src={logo} alt="https://placehold.co/100" className="navbar-logo" />
+        <img src={logo} onClick={() => location.reload()} alt="https://placehold.co/100" className="navbar-logo" />
         <img src={menu_open} onClick={openMenu} alt="menu" className="nav-mob-open" />
         <ol ref={menuRef} onClick={closeMenu} className="horizontal-list"> 
           <img src={menu_close} alt="" className="nav-mob-close" />

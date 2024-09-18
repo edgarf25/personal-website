@@ -42,11 +42,16 @@ function Projects() {
     const [visibleProjects, setVisibleProjects] = useState(initialVisibleProjects.current); // Setting initial visible projects to 3 on large screens
     const [selectedProject, setSelectedProject] = useState(null); // To manage the selected project
     const [isModalOpen, setIsModalOpen] = useState(false); // To manage modal state
+    const isMobileRef = useRef(isMobileScreen);
+
     
     const checkMobileScreen = () => {
 
       const isMobileScreen = window.matchMedia("(max-width: 1024px)").matches;
-      setIsMobile(isMobileScreen);
+      if (isMobileScreen !== isMobileRef.current) {
+        setIsMobile(isMobileScreen);
+        isMobileRef.current = isMobileScreen;
+      }
       // setVisibleProjects(isMobileScreen ? 2 : 3);
   };
 
@@ -95,7 +100,7 @@ function Projects() {
               <div className='img-container'>
                 <img src={project.p_img} alt='project' className="card-img" />
               </div>
-              <p>{project.p_desc}</p>
+              <p>{project.p_desc} <style></style></p>
               <p><strong>Technologies:</strong> {project.p_tech}</p>
               <div className='project-readmore'>
                 <p>Read More</p>
