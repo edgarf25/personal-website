@@ -48,3 +48,14 @@
     display: block; 
     margin: 20px auto 20px; 
   }
+
+  .modal-body a:visited {
+    /* text-decoration: none; Remove underline */
+    color: #64ffda; 
+  }
+
+  .modal-body a{
+    color: #64ffda;
+    display: flex;
+    justify-content: center;
+  }

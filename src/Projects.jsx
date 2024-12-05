@@ -66,7 +66,7 @@ function Projects() {
   }, []);
 
   const openModal = (project) => {
-    if (project.has_link == true) { //if the json file has a link then open the link
+    if (project.has_link_only == true) { //if the json file has a link then open the link
       console.log(project.has_link);
       window.open(project.p_link, '_blank');
 
@@ -120,10 +120,11 @@ function Projects() {
           content={selectedProject ? (
             <>
               <h2>{selectedProject.p_name}</h2>
-              <p>{selectedProject.p_moreinfo}</p>
-              <img src={selectedProject.p_img}/>
+              <p style={{ whiteSpace: 'pre-line' }}>{selectedProject.p_moreinfo}</p>
+              {selectedProject.p_website ? <a href={selectedProject.p_website} target="_blank" rel="noopener noreferrer">Visit Website</a> : null}
+              {selectedProject.p_modal_img ? <img src={selectedProject.p_modal_img}/> : <img src={selectedProject.p_img}/>}
             </> 
-          ) : null}
+          ) : null} //The Style in the paragraph makes sure that \n in the json file is read as a new line 
       />
       </div>
     );
