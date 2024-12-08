@@ -33,6 +33,18 @@
     color: #64ffda;
 }
 
+.social img {
+    /* display: flex; */
+    /* align-items: center; */
+    width: 40px; 
+    height: 40px; 
+    margin: 0px 10px; 
+}
+
+.social img:hover {
+    transform: scale(1.5);
+  }
+
 @media screen and (max-width: 768px) {
 
     .welcome {
@@ -64,6 +76,17 @@
         text-align: left;
     }
 
-    
+    .social img {
+        /* display: flex; */
+        /* align-items: center; */
+        width: 40px; 
+        height: 40px; 
+        margin: 0px 10px; 
+    }
+
+    .social img:hover {
+        transform: none;
+        transition: none;
+      }
 
 }
