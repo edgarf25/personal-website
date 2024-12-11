@@ -45,6 +45,10 @@
     transform: scale(1.5);
   }
 
+.github img{
+    filter: invert(100%);
+}
+
 @media screen and (max-width: 768px) {
 
     .welcome {

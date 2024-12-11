@@ -11,7 +11,7 @@ function Welcome() {
         <p>I&apos;m a software engineer who loves building and designing outstanding digital experiences. Currently, I&apos;m eager to expand my skill set and take on new, challenging projects as well as new opportunities.</p> 
 
         <div className="social">
-          <a href="https://github.com/edgarf25" target="_blank" rel="noopener noreferrer">
+          <a className="github" href="https://github.com/edgarf25" target="_blank" rel="noopener noreferrer">
             <img src={github} alt="github"/>
           </a>
           <a href="https://www.linkedin.com/in/edgar-fong" target="_blank" rel="noopener noreferrer">
